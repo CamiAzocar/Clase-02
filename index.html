@@ -16,13 +16,18 @@ canvas { display: block;}
     <title>MI SEGUNDA PÁGINA</title>
   </head>
   <body>
-      <h1>Camila Azócar</h1>
+      <h1></h1>
       <script>
      var a = 10;
       var b = 30
       var c;
+        var nombres = {
+            estudiantes: ["Camila Azócar", "María Paz Concha", "Olga F. Vio", "Trinidad González", "Matías Hagen", "María Francisca Hepp", "María Eliana Infante", "Magdalena Labarca", "Elsa Mora", "Vanessa Müller", "Jana Müller", "Muriel Muñoz", "María Trinidad Noriega", "Rosario Olivares", "Amparo Ortúzar", "Valeria Parraguéz", "Francisco Pezoa", "Francisca Purcell", "Martina Rivas", "Pilar Saavedra", "Lisa Saez", "David Sánchez", "Cecilia Soto", "María Elisa Valdés", "Francisca Vial", "María José Villasante"],
+            profesor: "Felipe Cortez"
+        }
       function setup() {
         createCanvas(windowWidth, windowHeight).position(0, 0).style('z-index', -1);
+         document.getElementsByTagName("h1")[0].append(nombres.estudiantes + " en cuarentena");
           console.log("La vola brigida y esta oculto")
       }
 
